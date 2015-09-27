@@ -1,0 +1,47 @@
+﻿@import 'variables.less';
+
+.question {
+    padding: 40px;
+    h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    button {
+        margin: 0 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.circle-wrapper {
+    margin: 20px 0;
+    .circle {
+        width: 18px;
+        height: 18px;
+        background-color: @gray-light;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 4px;
+        padding: 2px;
+        background-clip: content-box; 
+        border: 1px solid #fff;
+
+        &.yes {
+            background-color: @brand-success;
+        }
+
+        &.idk {
+            background-color: @brand-warning;
+        }
+
+        &.no {
+            background-color: @brand-danger;
+        }
+
+        &.active {
+            border: 1px solid @gray-light;
+        }
+    }
+}

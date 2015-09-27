@@ -1,0 +1,71 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Perustiedot</div>
+            <div class="panel-body" ng-hide="hidden">
+                <div role="form" novalidate ng-form="perustiedot">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="">Nimi</label>
+                                <input type="text" class="form-control" value="Matti Meikäläinen" disabled="true">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="">Henkilötunnus</label>
+                                <input type="text" class="form-control" value="123456-123A" disabled="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="">Osoite</label>
+                                <input type="text" class="form-control" placeholder="" ng-model="Osoite" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="">Kieli</label>
+                                <select class="form-control" name="Kieli">
+                                    <option>Suomi</option>
+                                    <option>Ruotsi</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="">Matkapuhelin</label>
+                                <input type="text" class="form-control" placeholder="" ng-model="Matkapuhelin" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="">Kotipuhelin</label>
+                                <input type="text" class="form-control" placeholder="" ng-model="Kotipuhelin" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="">Työpaikka</label>
+                                <input type="text" class="form-control" placeholder="" ng-model="Tyopaikka" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="">Työpuhelin</label>
+                                <input type="text" class="form-control" placeholder="" ng-model="Tyopuhelin" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form questions="questions" active-question-index="activeQuestionIndex" class="fade"></form>
+    </div>
+</div>

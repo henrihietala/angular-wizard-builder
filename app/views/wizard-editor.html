@@ -1,0 +1,26 @@
+<div class="row fade">
+    <div class="col-sm-12">
+        <h1>Kysymyseditori</h1>
+            <p class="lead">Muokkaa kysymystekstejä, poista kysymyksiä tai lisää ehtoja kysymyksien näyttämiselle.</p>
+        <div class="input-group input-group-lg fade" ng-repeat="q in questions" style="margin-bottom: 10px;">
+            <span class="input-group-addon" id="sizing-addon1">{{q.sortOrder}}</span>
+            <input type="text" class="form-control" placeholder="Syötä kysymys" ng-model="q.name">
+            <span class="input-group-btn">
+                <!--<button class="btn btn-danger" type="button" ng-click="removeQuestion($index)">Poista</button>-->
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Toiminnot &nbsp;
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="">Lisää ehto</a></li>
+                    <li class="text-danger"><a href="">Poista kysymys</a></li>
+                </ul>
+            </span>
+        </div>
+
+        <div class="text-center">
+            <button ng-click="addQuestion()" class="btn btn-success btn-lg">Lisää kysymys</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+﻿<div class="well text-center question fade">
+    <h2>{{question.sortOrder}}. {{question.name}}</h2>
+    
+    <button class="btn btn-success" ng-click="question.value = 0; moveToNextQuestion()">Kyllä</button>
+    <button class="btn btn-warning" ng-click="question.value = 1; moveToNextQuestion()">En osaa sanoa</button>
+    <button class="btn btn-danger" ng-click="question.value = 2; moveToNextQuestion()">En</button>
+</div>

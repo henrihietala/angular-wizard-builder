@@ -1,0 +1,22 @@
+﻿<form>
+    <div ng-repeat="q in questions">
+        <question question="q"
+                  active-question-index="activeQuestionIndex"
+                  move-to-next-question="moveToNextQuestion"
+                  move-to-previous-question="moveToPreviousQuestion"
+                  ng-show="activeQuestionIndex === $index"></question>
+    </div>
+
+    <div class="text-center circle-wrapper">
+        <a href=""
+           ng-click="moveToIndex($index)" 
+           class="circle"
+           ng-class="{'yes': q.value === 0, 'idk': q.value === 1, 'no': q.value === 2, 'active': activeQuestionIndex === q.sortOrder-1}" 
+           ng-repeat="q in questions"></a>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-default" ng-click="moveToPreviousQuestion()">Edellinen</button>
+        <button class="btn btn-default" ng-click="moveToNextQuestion()">Seuraava</button>
+    </div>
+</form>
