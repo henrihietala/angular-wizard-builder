@@ -7,7 +7,7 @@
 describe('Service: QuestionModelService', () => {
 
   // load the service's module
-  beforeEach(module('sprDemoApp'));
+  beforeEach(module('DemoApp'));
 
   // instantiate service
   var QuestionModelService;

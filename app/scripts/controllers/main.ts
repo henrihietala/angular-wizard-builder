@@ -2,7 +2,7 @@
 
 'use strict';
 
-module sprDemoApp {
+module DemoApp {
   export interface IMainScope extends ng.IScope {
     awesomeThings: any[];
   }
@@ -19,5 +19,5 @@ module sprDemoApp {
   }
 }
 
-angular.module('sprDemoApp')
-  .controller('MainCtrl', sprDemoApp.MainCtrl);
+angular.module('demoApp')
+  .controller('MainCtrl', DemoApp.MainCtrl);

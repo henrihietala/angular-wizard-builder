@@ -7,7 +7,7 @@
 describe('Directive: form', () => {
 
   // load the directive's module
-  beforeEach(module('sprDemoApp'));
+  beforeEach(module('DemoApp'));
 
   var element: JQuery,
     scope: ng.IScope;

@@ -7,10 +7,10 @@
 describe('Controller: WizardCtrl', () => {
 
   // load the controller's module
-  beforeEach(module('sprDemoApp'));
+  beforeEach(module('DemoApp'));
 
-  var WizardCtrl: sprDemoApp.WizardCtrl,
-    scope: sprDemoApp.IWizardScope;
+  var WizardCtrl: DemoApp.WizardCtrl,
+    scope: DemoApp.IWizardScope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(($controller: ng.IControllerService, $rootScope: ng.IRootScopeService) => {

@@ -2,7 +2,7 @@
 
 'use strict';
 
-module sprDemoApp {
+module DemoApp {
 
     export class Question implements ng.IDirective {
         templateUrl = './views/directive-templates/question.html';
@@ -16,10 +16,10 @@ module sprDemoApp {
     }
 
     export function questionFactory() {
-        return new sprDemoApp.Question();
+        return new DemoApp.Question();
     }
 
 }
 
-angular.module('sprDemoApp')
-    .directive('question', sprDemoApp.questionFactory);
+angular.module('demoApp')
+    .directive('question', DemoApp.questionFactory);

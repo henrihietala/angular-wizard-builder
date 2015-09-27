@@ -3,7 +3,7 @@
 
 'use strict';
 
-angular.module('sprDemoApp', [
+angular.module('demoApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',

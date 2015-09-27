@@ -2,7 +2,7 @@
 
 'use strict';
 
-module sprDemoApp {
+module DemoApp {
     export interface IWizardeditorScope extends ng.IScope {
     }
 
@@ -32,5 +32,5 @@ module sprDemoApp {
     }
 }
 
-angular.module('sprDemoApp')
-    .controller('WizardeditorCtrl', sprDemoApp.WizardeditorCtrl);
+angular.module('demoApp')
+    .controller('WizardeditorCtrl', DemoApp.WizardeditorCtrl);

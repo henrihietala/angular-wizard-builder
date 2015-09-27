@@ -2,7 +2,7 @@
 
 'use strict';
 
-module sprDemoApp {
+module DemoApp {
 
     export class Form implements ng.IDirective {
         templateUrl = './views/directive-templates/form.html';
@@ -34,10 +34,10 @@ module sprDemoApp {
     export function formFactory() {
 
         console.log('test');
-        return new sprDemoApp.Form();
+        return new DemoApp.Form();
     }
 
 }
 
-angular.module('sprDemoApp')
-    .directive('form', sprDemoApp.formFactory);
+angular.module('demoApp')
+    .directive('form', DemoApp.formFactory);

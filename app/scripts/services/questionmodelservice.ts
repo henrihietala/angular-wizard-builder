@@ -2,27 +2,27 @@
 
 'use strict';
 
-module sprDemoApp {
+module DemoApp {
     export class Questionmodelservice {
         questions: any[] = [
             {
                 sortOrder: 1,
-                name: 'Oletko sairastanut syöpää?',
+                name: 'Kysymys?',
                 value: null
             },
             {
                 sortOrder: 2,
-                name: 'Oletko ollut lääkityksen alaisena viimeisen puolen vuoden aikana?',
+                name: 'Kysymys?',
                 value: null
             },
             {
                 sortOrder: 3,
-                name: 'Oletko käyttänyt huumeita?',
+                name: 'Kysymys?',
                 value: null
             }
         ];
     }
 }
 
-angular.module('sprDemoApp')
-    .service('QuestionModelService', sprDemoApp.Questionmodelservice);
+angular.module('demoApp')
+    .service('QuestionModelService', DemoApp.Questionmodelservice);

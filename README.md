@@ -1,4 +1,6 @@
-# spr-demo
+# Wizard builder demo
+
+Just trying out stuff, don't bother using.
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.11.2.

@@ -7,10 +7,10 @@
 describe('Controller: MainCtrl', () => {
 
   // load the controller's module
-  beforeEach(module('sprDemoApp'));
+  beforeEach(module('DemoApp'));
 
-  var MainCtrl: sprDemoApp.MainCtrl,
-    scope: sprDemoApp.IMainScope;
+  var MainCtrl: DemoApp.MainCtrl,
+    scope: DemoApp.IMainScope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(($controller: ng.IControllerService, $rootScope: ng.IRootScopeService) => {
