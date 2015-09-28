@@ -10,11 +10,7 @@ module DemoApp {
         vm;
         // @ngInject
         constructor(private $scope, private QuestionModelService) {
-            
-            $scope.questions = QuestionModelService.questions;
-            this.vm = $scope;
-            $scope.addQuestion = this.addQuestion;
-            $scope.removeQuestion = this.removeQuestion;
+            $scope.vm = this;
         }
 
         addQuestion = () => {
@@ -27,7 +23,7 @@ module DemoApp {
 
         removeQuestion = (index) => {
             console.log('removing ' + index);
-            this.QuestionModelService.questions.slice(1, index);
+            this.QuestionModelService.questions.splice(index, 1);
         }
     }
 }
